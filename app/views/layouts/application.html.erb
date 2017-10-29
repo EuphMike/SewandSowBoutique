@@ -1,14 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Workspace</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Bloccit</title>
+   <%= stylesheet_link_tag    "application", media: "all" %>
+   <%= javascript_include_tag "application" %>
+   <%= csrf_meta_tags %>
+ </head>
+ <body>
+   <ul>
+      <li><%= link_to "Welcome", home_Welcome_path %></li>
+      <li><%= link_to "Blog", home_Blog_path %></li>
+      <li><%= link_to "Shop", home_Shop_path %></li>
+      <li><%= link_to "Custom", home_Custom_path %></li>
+      <li><%= link_to "FAQ/About", home_About_path %></li>
+      <li><%= link_to "Contact Us", home_Contact_path %></li>
+   </ul>
 
-<%= yield %>
+   <%= yield %>
 
-</body>
-</html>
+ </body>
+ </html>
