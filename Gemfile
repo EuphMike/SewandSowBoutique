@@ -61,7 +61,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Refinery CMS
-gem 'refinerycms', '~> 4.0'
+gem 'refinerycms', '~> 4.0.1'
 
 # Optionally, specify additional Refinery CMS Extensions here:
 gem 'refinerycms-acts-as-indexed', ['~> 3.0', '>= 3.0.0']
