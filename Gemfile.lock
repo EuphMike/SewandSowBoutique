@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/fernandoaleman/refinerycms-bootstrap.git
+  revision: b90e39e106abeb77dca7ae4586229b29fe5c68b4
+  branch: 2-1-stable
+  specs:
+    refinerycms-bootstrap (0.0.1)
+      bootstrap-sass-rails
+
+GIT
   remote: https://github.com/refinery/refinerycms-blog
   revision: 76ee576e31945dde56ccf45f3715ccf9af631573
   branch: master
@@ -64,6 +72,12 @@ GEM
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.1.0.2)
+      sass (~> 3.2)
+    bootstrap-sass-rails (3.1.0.0)
+      bootstrap-sass (~> 3.1.0.0)
+      railties (>= 3.2.0)
+      sass-rails (>= 3.2.0)
     builder (3.2.3)
     byebug (9.1.0)
     coffee-rails (4.1.1)
@@ -282,6 +296,7 @@ DEPENDENCIES
   refinerycms (~> 3.0.0)
   refinerycms-authentication-devise (~> 1.0)
   refinerycms-blog!
+  refinerycms-bootstrap!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
