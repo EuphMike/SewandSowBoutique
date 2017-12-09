@@ -20,6 +20,8 @@ gem 'refinerycms', '~> 3.0.0'
 
 gem 'refinerycms-authentication-devise', '~> 1.0'
 
+gem 'refinerycms-bootstrap', :github => 'fernandoaleman/refinerycms-bootstrap', :branch => '2-1-stable'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
