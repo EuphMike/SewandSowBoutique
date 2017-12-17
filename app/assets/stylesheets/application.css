@@ -16,46 +16,52 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
 @import url('https://fonts.googleapis.com/css?family=Sacramento');
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Glass+Antiqua');
 
-p { font-family: 'Glass Antiqua', Arial, sans-serif;}
-
-h1 { 
-   font-family: 'Glass Antiqua', Arial, sans-serif;
+p { font-family: 'Glass Antiqua', Arial, sans-serif;
    font-size: 22px;
+   margin: 25px 40px !important;
+   
 }
+
+h1 { font-family: 'Glass Antiqua', Arial, sans-serif;}
 
 #logo h1 {
   font-family: 'Amatic SC', Arial, sans-serif !important;
+  margin: 25px 120px !important;
 }
 
 #logo h5 { 
-  font-family: 'Dawning of a New Day', Arial, sans-serif !important;
+  font-family: 'Architects Daughter', Arial, sans-serif !important;
+  margin: 25px 115px !important;
 }
- 
- #menu {
-    font-family: 'Architects Daughter', Arial, sans-serif !important;
-    font-size: 18px !important;
-    letter-spacing: 1.5px !important;
-    line-height: 1em !important;
-    margin: 15px 40px !important;
-    text-transform: uppercase !important;
- }
 
- #menu li {
+#body_content_title {
+  margin: 25px 40px;
+}
+
+#menu {
+  font-family: 'Architects Daughter', Arial, sans-serif !important;
+  font-size: 18px !important;
+  letter-spacing: 1.5px !important;
+  line-height: 1em !important;
+  margin: 25px 0px !important;
+  text-transform: uppercase !important; }
+
+#menu li {
   display: inline-block !important;
   list-style: outside none none !important;
   margin: 0.5em 0.6em !important;
   padding: 12px 15px !important;
-  position: relative !important;
-}
+  position: relative !important; }
 
- #menu li a {
+#menu li a {
   color: #000;
-  text-decoration: none;
-}
- #menu li:before,
- #menu li:after {
+  text-decoration: none; }
+
+#menu li:before,
+#menu li:after {
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
   height: 2px;
@@ -63,27 +69,28 @@ h1 {
   background-color: #528cb3;
   position: absolute;
   content: '';
-  opacity: 0;
-}
- #menu li:before {
+  opacity: 0; }
+
+#menu li:before {
   top: 0;
-  left: 0;
-}
- #menu li:after {
+  left: 0; }
+
+#menu li:after {
   bottom: 0;
-  right: 0;
-}
- #menu li:hover:before,
- #menu li.hover:before,
- #menu li:hover:after,
- #menu li.hover:after {
-  opacity: 1;
-}
- #menu li:hover:before,
- #menu li.hover:before {
-  left: 65%;
-}
- #menu li:hover:after,
- #menu li.hover:after {
-  right: 65%;
-}
+  right: 0; }
+
+#menu li:hover:before,
+#menu li.hover:before,
+#menu li:hover:after,
+#menu li.hover:after {
+  opacity: 1; }
+
+#menu li:hover:before,
+#menu li.hover:before {
+  left: 65%; }
+
+#menu li:hover:after,
+#menu li.hover:after {
+  right: 65%; }
+
+/*# sourceMappingURL=application.css.map */
