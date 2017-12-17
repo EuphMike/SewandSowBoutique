@@ -30,10 +30,6 @@ gem 'refinerycms-inquiries', '~> 3.0.0'
 
 gem 'refinerycms-page-images', '~> 3.0.0', github: "refinery/refinerycms-page-images", branch: "master"
 
-gem 'refinerycms-page-images', '~> 3.0.0', github: "refinery/refinerycms-page-images", branch: "master"
-
-gem 'refinerycms-page-images', '~> 3.0.0', github: "refinery/refinerycms-page-images", branch: "master"
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
