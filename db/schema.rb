@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20171209201158) do
+=======
+ActiveRecord::Schema.define(version: 20171209210434) do
+>>>>>>> forms
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -133,6 +137,28 @@ ActiveRecord::Schema.define(version: 20171209201158) do
   add_index "refinery_blog_posts", ["id"], name: "index_refinery_blog_posts_on_id"
   add_index "refinery_blog_posts", ["slug"], name: "index_refinery_blog_posts_on_slug"
 
+  create_table "refinery_image_page_translations", force: :cascade do |t|
+    t.integer  "refinery_image_page_id", null: false
+    t.string   "locale",                 null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.text     "caption"
+  end
+
+  add_index "refinery_image_page_translations", ["locale"], name: "index_refinery_image_page_translations_on_locale"
+  add_index "refinery_image_page_translations", ["refinery_image_page_id"], name: "index_186c9a170a0ab319c675aa80880ce155d8f47244"
+
+  create_table "refinery_image_pages", force: :cascade do |t|
+    t.integer "image_id"
+    t.integer "page_id"
+    t.integer "position"
+    t.text    "caption"
+    t.string  "page_type", default: "page"
+  end
+
+  add_index "refinery_image_pages", ["image_id"], name: "index_refinery_image_pages_on_image_id"
+  add_index "refinery_image_pages", ["page_id"], name: "index_refinery_image_pages_on_page_id"
+
   create_table "refinery_image_translations", force: :cascade do |t|
     t.integer  "refinery_image_id", null: false
     t.string   "locale",            null: false
@@ -233,6 +259,29 @@ ActiveRecord::Schema.define(version: 20171209201158) do
   add_index "refinery_pages", ["lft"], name: "index_refinery_pages_on_lft"
   add_index "refinery_pages", ["parent_id"], name: "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], name: "index_refinery_pages_on_rgt"
+
+  create_table "refinery_portfolio_galleries", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.integer  "depth"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "cover_image_id"
+  end
+
+  create_table "refinery_portfolio_items", force: :cascade do |t|
+    t.string   "title"
+    t.string   "caption"
+    t.integer  "image_id",   null: false
+    t.integer  "gallery_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "position"
+  end
 
   create_table "refinery_resource_translations", force: :cascade do |t|
     t.integer  "refinery_resource_id", null: false
