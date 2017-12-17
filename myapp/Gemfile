@@ -7,10 +7,6 @@ gem 'rails', '4.2.5'
 group :development, :test do
   gem 'sqlite3'
 end
-
-group :production do 
-  gem 'pg'
-end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -19,20 +15,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
-gem 'refinerycms', '~> 3.0.0'
-
-gem 'refinerycms-authentication-devise', '~> 1.0'
-
-gem 'refinerycms-settings'
-
-gem 'refinerycms-inquiries', '~> 3.0.0'
-
-gem 'refinerycms-page-images', '~> 3.0.0', github: "refinery/refinerycms-page-images", branch: "master"
-
-gem 'refinerycms-page-images', '~> 3.0.0', github: "refinery/refinerycms-page-images", branch: "master"
-
-gem 'refinerycms-page-images', '~> 3.0.0', github: "refinery/refinerycms-page-images", branch: "master"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -52,12 +34,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'refinerycms-blog', git: 'https://github.com/refinery/refinerycms-blog', branch: 'master'
-# Blog Managment tool for Site owner Extension 
-
-gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
-# Advanced Text Editor Extension for Site Owner
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -71,3 +47,15 @@ group :development do
   gem 'spring'
 end
 
+
+# Refinery CMS
+gem 'refinerycms', '~> 3.0'
+
+# Optionally, specify additional Refinery CMS Extensions here:
+gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.1']
+gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
+gem 'refinerycms-authentication-devise', '~> 1.0'
+#  gem 'refinerycms-blog', ['~> 3.0', '>= 3.0.0']
+#  gem 'refinerycms-inquiries', ['~> 3.0', '>= 3.0.0']
+#  gem 'refinerycms-search', ['~> 3.0', '>= 3.0.0']
+#  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
