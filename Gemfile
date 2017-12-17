@@ -27,12 +27,8 @@ gem 'refinerycms-inquiries', '~> 3.0.0'
 gem 'refinerycms-page-images', '~> 3.0.0', github: "refinery/refinerycms-page-images", branch: "master"
 
 gem 'refinerycms-page-images', '~> 3.0.0', github: "refinery/refinerycms-page-images", branch: "master"
-<<<<<<<<< saved version
-
-=========
 
 gem 'refinerycms-page-images', '~> 3.0.0', github: "refinery/refinerycms-page-images", branch: "master"
->>>>>>>>> local version
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -70,6 +66,4 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
-
 
