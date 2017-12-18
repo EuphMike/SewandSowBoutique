@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20171209201158) do
-=======
 ActiveRecord::Schema.define(version: 20171209210434) do
->>>>>>> forms
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
