@@ -27,7 +27,6 @@ p { font-family: 'Glass Antiqua', Arial, sans-serif;
 
 h1 { font-family: 'Glass Antiqua', Arial, sans-serif;}
 
-<<<<<<< HEAD
 #blog_posts {
   font-family: 'Glass Antiqua', Arial, sans-serif !important;
   font-size: 18px !important;
@@ -45,8 +44,6 @@ h1 { font-family: 'Glass Antiqua', Arial, sans-serif;}
   margin: 0px 20px;
 }
 
-
-=======
 #new_inquiry {
   font-family: 'Glass Antiqua', Arial, sans-serif; 
   margin: 25px 40px;
@@ -70,7 +67,7 @@ h1 { font-family: 'Glass Antiqua', Arial, sans-serif;}
   margin: 25px 40px;
   font-size: 18px;
 }
->>>>>>> fcb69ff633dc577b845fe8cd6a06c15e60bfd8d6
+
 #logo h1 {
   font-family: 'Amatic SC', Arial, sans-serif !important;
   margin: 25px 120px !important;
@@ -137,4 +134,3 @@ h1 { font-family: 'Glass Antiqua', Arial, sans-serif;}
 #menu li.hover:after {
   right: 65%; }
 
-/*# sourceMappingURL=application.css.map */
